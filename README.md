@@ -1,4 +1,5 @@
 # Personal Finance Scenario Simulator
+<img width="1358" height="1078" alt="Untitled design (17)" src="https://github.com/user-attachments/assets/26dc98b5-46d0-41c8-b0db-b2ffc8a074d2" />
 
 ## Overview
 Interactive finance planning tool for testing monthly budget scenarios and savings outcomes.
