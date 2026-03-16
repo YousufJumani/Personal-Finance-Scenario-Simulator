@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Finance Scenario Simulator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Finance Planning</p>
+        <h1>Personal Finance Scenario Simulator</h1>
+        <p class="hero-copy">Quickly test how spending, emergency runway, and monthly investing change your path to a money goal.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">Vanilla JS</span>
+          <span class="tech-tag">Financial Modeling</span>
+        </div>
+      </section>
+
+      <section class="dashboard">
+        <form id="finance-form" class="card form-card">
+          <h2>Scenario Inputs</h2>
+          <label>Monthly income<input type="number" name="income" min="0" step="50" value="4800" required /></label>
+          <label>Fixed expenses<input type="number" name="fixedExpenses" min="0" step="50" value="1900" required /></label>
+          <label>Flexible expenses<input type="number" name="flexExpenses" min="0" step="50" value="850" required /></label>
+          <label>Current savings<input type="number" name="currentSavings" min="0" step="100" value="9000" required /></label>
+          <label>Goal savings<input type="number" name="goalSavings" min="1" step="100" value="30000" required /></label>
+          <label>Emergency fund target months<input type="number" name="emergencyMonths" min="1" max="24" step="1" value="6" required /></label>
+          <label>Annual investment return %<input type="number" name="returnRate" min="0" step="0.1" value="4.2" required /></label>
+          <button type="submit">Run Simulation</button>
+        </form>
+
+        <section id="finance-result" class="card results-card" aria-live="polite"></section>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
