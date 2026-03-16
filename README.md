@@ -3,6 +3,8 @@
 ## Overview
 Interactive finance planning tool for testing monthly budget scenarios and savings outcomes.
 
+Website demo:- https://personal-finance-scenario-simulator.vercel.app/
+
 This project is designed for portfolio demos and recruiter walkthroughs:
 - clear input panel
 - visual KPI cards
